@@ -1,11 +1,4 @@
----
-title: Python基本
-date: 2019-07-06 09:56:44
-tags: [Python]
-categories: Python
-layout: post
----
-
+[TOC]
 # 基本知识
 ## 数据结构
 ### 数
