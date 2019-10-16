@@ -44,7 +44,7 @@ singleton = (2 , )含有一个元素的元组
 删除：del ab['Spammer']
 添加：ab['Guido'] = 'guido@python.org'
 ```
-## 运算符
+## 2.1运算符
 |运算符|名称|说明                                                           |
 |--- |----|----                                                             |
 |+	|加	|两个对象相加（字符串和整数）                                       |
@@ -70,8 +70,8 @@ singleton = (2 , )含有一个元素的元组
 |and	|布尔“与”	|如果x为False，x and y返回False，否则它返回y的计算值    |
 |or	|布尔“或”	|如果x是True，它返回True，否则它返回y的计算值               |
                                                                             |
-## 控制流                                                                   |
-### 条件判断                                                                |
+## 3.1控制流                                                                   |
+### 3.1.1条件判断                                                                |
 如果 条件为真，我们运行一块语句（称为 if-块 ）， 否则 我们处理另外一块语句  |
 ```
 if <条件判断1>:
@@ -100,7 +100,7 @@ else:
 
 print 'Done'
 ```
-### while循环
+### 3.1.2while循环
 只要在一个条件为真的情况下，while语句允许你重复执行一块语句
 ```
 number = 23
@@ -122,7 +122,7 @@ else:
 
 print 'Done'
 ```
-### for循环
+### 3.1.3for循环
 for..in是另外一个循环语句，它在一序列的对象上递归即逐一使用队列中的每个项目。
 ```
 for i in range(1, 5):
@@ -137,9 +137,9 @@ def sayHello():
     print 'Hello World!' # block belonging to the function
 sayHello()
 ```
-# 面向对象
-## 类和实例
-### 类的定义
+# 2面向对象
+## 2.1类和实例
+### 2.1.1类的定义
 使用class关键字，object代表继承的类名
 ```
 class classname(object):
@@ -147,7 +147,7 @@ class classname(object):
 
 class = classname()
 ```
-### 构造函数
+### 2.1.2构造函数
 __init__方法在类的一个对象被建立时，马上运行。这个方法可以用来对你的对象做一些你希望的 初始化 。
 ```
 class Person:
@@ -155,29 +155,29 @@ class Person:
         self.name = name
 ```
 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。
-### 数据封装
+### 2.1.3数据封装
 在Python中，实例的变量名如果以__开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问。
 注：在Python中，变量名类似__xxx__的，也就是以双下划线开头，并且以双下划线结尾的，是特殊变量，特殊变量是可以直接访问的。
-## 继承
+## 3.1继承
 当我们定义一个class的时候，可以从某个现有的class继承，新的class称为子类（Subclass），而被继承的class称为基类、父类或超类（Base class、Super class）
 ```
 class Animal(object):
     def run(self):
         print('Animal is running...')
 ```
-## 多态
+## 4.1多态
 当子类和父类都存在相同的方法时，我们说，子类的方法覆盖了父类的方法，在代码运行的时候，总是会调用子类的方法。
-## 其他重要特征
+## 5.1其他重要特征
 > 以双下划线开头有特殊用途
-### __slots__
+### 5.1.1__slots__
 __slots__变量可以用来限制该class实例能添加的属性，定义该变量后只能添加name、age属性
 ```
 class Student(object):
     __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称
 ```
-### __str__()
+### 5.1.2__str__()
 定义该方法，当调用print打印类时，可以直接调用该方法；
-### __iter__ 和 __getitem__
+### 5.1.3__iter__ 和 __getitem__
 实现_iter__方法可以使类用于for...in循环，实现__getitem__()可以让类用于切片；
 
 
