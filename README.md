@@ -11,7 +11,7 @@
 - 单调栈
 - 并查集
 - 滑动窗口（解决查找满足一定条件的连续区间性质的问题）
-- 前缀和&&HASH
+- 前缀和&&HASH（从一维到二维https://leetcode-cn.com/circle/discuss/SrePlc/）
 - 拆分
 - 拓扑排序
 - BFS
