@@ -2,7 +2,7 @@
 > 如果要创建一个支持绑定的service，我们必须要重写它的onBind()方法。这个方法会返回一个IBinder对象，它是客户端用来和服务器进行交互的接口。而要得到IBinder接口，我们通常有三种方式：继承Binder类，使用Messenger类，使用AIDL。
 
 以一个例子介绍，将Activity作为客户端，Service作为服务端，实现两者之间的通信
-Service侧代码
+## Service侧代码
 ```java
 public class MyService extends Service {
     private DownloadBinder mBinder = new DownloadBinder();
@@ -28,7 +28,7 @@ public class MyService extends Service {
 ```
 
 
-Activity侧代码
+## Activity侧代码
 构建出了一个Intent 对象，然后调用bindService() 方法将MainActivity和MyService进行绑定。bindService() 方法接收3个参数：
 - 第一个参数就是刚刚构建出的Intent 对象；
 - 第二个参数是前面创建出的ServiceConnection的实例；
