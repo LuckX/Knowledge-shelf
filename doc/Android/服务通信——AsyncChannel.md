@@ -65,7 +65,7 @@ public static Messenger getServiceMessenger() {
 ```
 
 ---
-2.2.双向通道建立
+### 2.2.双向通道建立
 双向通道是在单向通道基础上建立的，在单向通道建立的基础桑还需要实现以下几个步骤：
 1. 服务端需要初始化Handler，创建自己的AsyncChannel对象；
 2. 客户端在收到CMD_CHANNEL_HALF_CONNECTED之后，向AsyncChannel对象发送CMD_CHANNEL_FULL_CONNECTION消息申请建立双向通道；
@@ -115,7 +115,7 @@ public void handleMessage(Message msg) {
 ````
 
 ---
-2.3.fullyConnectSync方式建立双向通道
+### 2.3.fullyConnectSync方式建立双向通道
 创建双向通道基本和单向相同，具体步骤如下
 客户端：
 1. 初始化Handler对象；
