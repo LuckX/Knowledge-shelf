@@ -19,5 +19,10 @@
 - 动态规划
 - 贪心算法
 - 字典树
-
+# 3.Android
+> 关于安卓Framework的一些基础知识，便于查看
+## 3.1 [服务](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1.md)
+## 3.2 服务通信
+### 3.2.1 [BindService](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94BindService.md)
+### 3.2.2 [Messenger](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94Messenger.md)
 
