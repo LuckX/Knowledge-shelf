@@ -25,14 +25,10 @@
 ---
 # 3.Android
 > 关于安卓Framework的一些基础知识，便于查看
-## 3.1 [服务](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1.md)
-## 3.2 服务通信
-### 3.2.1 [BindService](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94BindService.md)
-> 使用bindService方式启动服务；
-### 3.2.2 [Messenger](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94Messenger.md)
-> 实现比较简单，但是相比于AIDL,有两个缺点：
-> 1. 只能串行的解决请求,无法处理大量的并发请求；
-> 2. 只能通过Message来传递信息实现交互无法直接跨进程调用服务端的方法；
-### 3.2.3 [AsyncChannel](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94AsyncChannel.md)
-> Android内部实现的机制，并未对外提供，主要用于wifiservice
+- [服务](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1.md)
+- 跨进程通信
+   - [BindService](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94BindService.md)（使用bindService方式启动服务；）
+   - [Messenger](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94Messenger.md)（实现比较简单，但是相比于AIDL,有两个缺点：1. 只能串行的解决请求,无法处理大量的并发请求；2. 只能通过Message来传递信息实现交互无法直接跨进程调用服务端的方法；）
+   - [AIDL](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94AIDL.md)（一种Android定义的接口语言，BindService的另外一种实现）
+   - [AsyncChannel](https://github.com/LuckX/Knowledge-shelf/blob/master/doc/Android/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E2%80%94%E2%80%94AsyncChannel.md)（Android内部实现的机制，并未对外提供，主要用于wifiservice）
 
